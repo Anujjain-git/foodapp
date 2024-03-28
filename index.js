@@ -19,6 +19,8 @@ app.use((req, res, next) => {
 app.get('/', (req, res)=>{
     app.use(express.static(path.resolve(__dirname, "reactpart", "build")));
     res.sendFile(path.resolve(__dirname, "reactpart", "build", 'index.html'))
+    // console.log('sending file');
+    // console.log(path.resolve(__dirname, "reactpart", "build", 'index.'))
 })
 // app.get("/", function (req, res) {
 //     res.send("Hello")
