@@ -19,12 +19,12 @@ app.use((req, res, next) => {
 
 app.get("/static/js/main.f0a9c315.js", (req, res)=>{
     // app.use("/static/js", express.static(path.resolve(__dirname, "rectpart", "build", "static", "js")));
-    res.sendFile(path.resolve(__dirname, "rectpart", "build", "static", "js", "main.f0a9c315.js"));
+    res.sendFile(path.resolve(__dirname, "reactpart", "build", "static", "js", "main.f0a9c315.js"));
 })
 
 app.get("/static/css/main.3bae470d.css", (req, res)=>{
     // app.use("/static/css", express.static(path.resolve(__dirname, "rectpart", "build", "static", "css")));
-    res.sendFile(path.resolve(__dirname, "rectpart", "build", "static", "css", "main.3bae470d.css"));
+    res.sendFile(path.resolve(__dirname, "reactpart", "build", "static", "css", "main.3bae470d.css"));
 })
 
 
