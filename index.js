@@ -19,6 +19,7 @@ app.use((req, res, next) => {
 
 app.get("/static/js/main.f0a9c315.js", (req, res)=>{
     // app.use("/static/js", express.static(path.resolve(__dirname, "rectpart", "build", "static", "js")));
+    console.log('sended');
     res.sendFile(path.resolve(__dirname, "reactpart", "build", "static", "js", "main.f0a9c315.js"));
 })
 
