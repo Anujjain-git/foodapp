@@ -16,6 +16,7 @@ app.use((req, res, next) => {
     );
     next();
 })
+app.use("/static", express.static(path.resolve(__dirname, "rectpart", "build", "static")));
 app.get('/', (req, res)=>{
     app.use(express.static(path.resolve(__dirname, "reactpart", "build")));
     res.sendFile(path.resolve(__dirname, "reactpart", "build", 'index.html'))
